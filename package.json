@@ -1,0 +1,38 @@
+{
+  "name": "stryker-lab-runner",
+  "version": "1.0.0",
+  "description": "The Stryker TestRunner for Lab",
+  "main": "src/index.js",
+  "scripts": {
+    "compile": "tsc -p -watch -p ./",
+    "test": "lab test",
+    "lint": "tslint -e './node_modules/**/*.ts' './**/*.ts'",
+    "validate": "nsp check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/sleistner/stryker-lab-runner.git"
+  },
+  "keywords": [
+    "stryker",
+    "runner",
+    "mutator",
+    "lab"
+  ],
+  "author": "nicojs",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sleistner/stryker-lab-runner/issues"
+  },
+  "homepage": "https://github.com/sleistner/stryker-lab-runner#readme",
+  "peerDependencies": {
+    "stryker-api": "^0.4.1"
+  },
+  "devDependencies": {
+    "@types/estree": "0.0.34",
+    "@types/node": "^6.0.45",
+    "stryker-api": "^0.4.1",
+    "tslint": "^3.15.1",
+    "typescript": "^2.0.3"
+  }
+}
