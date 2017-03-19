@@ -8,7 +8,7 @@ import {
 import { InputFile } from 'stryker-api/core';
 
 const { execute } = require('lab');
-import StrykerLabReporter from './StrykerLabReporter';
+import StrykerLabReporter from './lab-reporter';
 
 export default class LabTestRunner extends EventEmitter implements TestRunner {
 
