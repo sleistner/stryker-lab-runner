@@ -2,16 +2,26 @@
   "name": "stryker-lab-runner",
   "version": "1.0.0",
   "description": "The Stryker TestRunner for Lab",
-  "main": "src/index.js",
+  "main": "out/index.js",
   "scripts": {
-    "compile": "tsc -p -watch -p ./",
-    "test": "lab test",
-    "lint": "tslint -e './node_modules/**/*.ts' './**/*.ts'",
-    "validate": "nsp check"
+    "build": "npm-run-all clean lint compile",
+    "clean": "rimraf ./out",
+    "compile": "tsc --outDir out -p ./",
+    "pretest": "npm run build",
+    "test": "lab ./out/test",
+    "lint": "tslint '+(test|src)/**/*.ts'",
+    "validate": "nsp check",
+    "release": "npm-run-all test publish"
   },
+  "author": "Auto-Generated <digitalsportsdev@adidas.com>",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/micoach/stryker-lab-runner#readme",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/sleistner/stryker-lab-runner.git"
+    "url": "git+ssh://git@bitbucket.org/micoach/stryker-lab-runner.git"
+  },
+  "publishConfig": {
+    "registry": "https://micoach.artifactoryonline.com/micoach/api/npm/dsop-npm-private"
   },
   "keywords": [
     "stryker",
@@ -19,18 +29,16 @@
     "mutator",
     "lab"
   ],
-  "author": "nicojs",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/sleistner/stryker-lab-runner/issues"
-  },
-  "homepage": "https://github.com/sleistner/stryker-lab-runner#readme",
   "peerDependencies": {
     "stryker-api": "^0.4.1"
   },
   "devDependencies": {
     "@types/estree": "0.0.34",
     "@types/node": "^6.0.45",
+    "code": "^4.0.0",
+    "lab": "^13.0.1",
+    "npm-run-all": "^4.0.2",
+    "rimraf": "^2.6.1",
     "stryker-api": "^0.4.1",
     "tslint": "^3.15.1",
     "typescript": "^2.0.3"
