@@ -1,0 +1,80 @@
+{
+  "extends": "eslint:recommended",
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "impliedStrict": true
+  },
+  "rules": {
+    "space-before-function-paren": [
+      "error",
+      "never"
+    ],
+    "max-len": [
+      "error",
+      120
+    ],
+    "max-params": "error",
+    "no-trailing-spaces": "error",
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "warn",
+          "error"
+        ]
+      }
+    ],
+    "one-var": [
+      "error",
+      {
+        "var": "never",
+        "let": "never",
+        "const": "never"
+      }
+    ],
+    "no-with": "error",
+    "no-eval": "error",
+    "eqeqeq": "error",
+    "yoda": "error",
+    "no-else-return": "error",
+    "no-nested-ternary": "error",
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1
+      }
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "indent": [
+      "error",
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "quotes": [
+      "error",
+      "single",
+      "avoid-escape"
+    ],
+    "quote-props": [
+      "error",
+      "as-needed"
+    ],
+    "keyword-spacing": "error",
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "no-tabs": "error",
+    "no-var": "error"
+  }
+}
