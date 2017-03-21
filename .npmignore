@@ -1,7 +1,2 @@
-*.ts
-!*.d.ts
 test
-tsconfig.json
-typings.json
 testResources
-typings
