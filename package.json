@@ -8,8 +8,11 @@
     "lint": "eslint .",
     "validate": "nsp check"
   },
+  "engines": {
+    "node": ">=6"
+  },
   "author": "Steffen Leistner",
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "https://github.com/sleistner/stryker-lab-runner#readme",
   "repository": {
     "type": "git",
