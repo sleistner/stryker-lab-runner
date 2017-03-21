@@ -48,3 +48,11 @@ module.exports = (config) => {
     });
 };
 ```
+
+# Contributors
+
+[Steffen Leistner](https://github.com/sleistner)
+
+# License
+
+MIT

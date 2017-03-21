@@ -9,7 +9,7 @@
     "validate": "nsp check"
   },
   "author": "Steffen Leistner",
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "https://github.com/sleistner/stryker-lab-runner#readme",
   "repository": {
     "type": "git",
