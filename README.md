@@ -16,7 +16,7 @@ npm i --save-dev stryker-lab-runner
 
 ### Load the plugin
 
-In order to use the `stryker-jest-runner` it must be loaded in the Stryker mutation testing framework via the Stryker configuration.
+In order to use the `stryker-lab-runner` it must be loaded in the Stryker mutation testing framework via the Stryker configuration.
 The easiest way to achieve this, is *not have a `plugins` section* in your config file. That way, all `node_modules` starting with `stryker-` will be loaded.
 
 ### Use the test runner
