@@ -1,7 +1,7 @@
 {
   "name": "stryker-lab-runner",
   "version": "1.0.0",
-  "description": "A plugin to use the Lab test runner and framework in Stryker, the JavaScript mutation testing framework",
+  "description": "A plugin to use the Lab test runner in Stryker, the JavaScript mutation testing framework",
   "main": "lib/index.js",
   "scripts": {
     "test": "lab -L test",

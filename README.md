@@ -31,7 +31,6 @@ module.exports = (config) => {
             included: false,
             mutated: true
         }],
-        testFramework: 'lab',
         testRunner: 'lab',
         reporter: [
             'progress',
@@ -40,7 +39,7 @@ module.exports = (config) => {
             'html',
             'event-recorder'
         ],
-        coverageAnalysis: 'perTest',
+        coverageAnalysis: 'off',
         plugins: [
             'stryker-lab-runner',
             'stryker-html-reporter'
