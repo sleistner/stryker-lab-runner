@@ -21,7 +21,7 @@
   "keywords": [
     "stryker",
     "stryker-plugin",
-    "stryker-lab-runner",
+    "stryker-test-runner",
     "mutator",
     "lab"
   ],
