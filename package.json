@@ -1,7 +1,7 @@
 {
   "name": "stryker-lab-runner",
   "version": "1.0.0",
-  "description": "A plugin to use the Lab test runner and framework in Stryker, the JavaScript mutation testing framework",
+  "description": "A plugin to use the Lab test runner in Stryker, the JavaScript mutation testing framework",
   "main": "lib/index.js",
   "scripts": {
     "test": "lab -L test",
@@ -21,12 +21,12 @@
   "keywords": [
     "stryker",
     "stryker-plugin",
-    "stryker-lab-runner",
+    "stryker-test-runner",
     "mutator",
     "lab"
   ],
   "peerDependencies": {
-    "stryker-api": "^0.4.1"
+    "stryker-api": "^0.5.0"
   },
   "devDependencies": {
     "code": "^4.0.0",
@@ -34,7 +34,7 @@
     "nsp": "^2.6.3",
     "precommit-hook-eslint": "^3.0.0",
     "sinon": "^2.1.0",
-    "stryker-api": "^0.4.1"
+    "stryker-api": "^0.5.0"
   },
   "pre-commit": [
     "lint",
